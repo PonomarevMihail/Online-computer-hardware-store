@@ -1,0 +1,1511 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Misha\\source\\repos\\KursachBD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\cart.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\cart.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\authoriz.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\authoriz.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\authoriz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\authoriz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\catalog.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\catalog.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\customer\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\customer\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\models\\productpricehistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:models\\productpricehistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\models\\onlinestoresellingcomputerequipmentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:models\\onlinestoresellingcomputerequipmentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\models\\legalentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:models\\legalentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\models\\deliverynotehead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:models\\deliverynotehead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\models\\deliverynotecontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:models\\deliverynotecontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\models\\contentoforder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:models\\contentoforder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\models\\enums\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:models\\enums\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\kursachbd.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:kursachbd.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product_price_history\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product_price_history\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product_price_history\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product_price_history\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\role\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\role\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product_price_history\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product_price_history\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product_price_history\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product_price_history\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product_price_history\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product_price_history\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\legal_entity\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\legal_entity\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\customer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\customer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product_price_history\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product_price_history\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\order\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\order\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\order\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\order\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\role\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\role\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\role\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\role\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\legal_entity\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\legal_entity\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\customer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\customer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\customer\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\customer\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\legal_entity\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\legal_entity\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\legal_entity\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\legal_entity\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\role\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\role\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\legal_entity\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\legal_entity\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\role\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\role\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\pagesdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\pagesdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\models\\pagesdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:models\\pagesdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\onlinestoresellingcomputerequipmentcontext.dgml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:onlinestoresellingcomputerequipmentcontext.dgml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\order\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\order\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\customer\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\customer\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\customer\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\customer\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\customer\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\customer\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\legal_entity\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\legal_entity\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\legal_entity\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\legal_entity\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\role\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\role\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\order\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\order\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\order\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\order\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\order\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\order\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\order\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\order\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product_price_history\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product_price_history\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product_price_history\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product_price_history\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product_price_history\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product_price_history\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\role\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\role\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\role\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\role\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|c:\\users\\misha\\source\\repos\\kursachbd\\pages\\product\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{028D98B5-253D-4E19-A8F6-99972A4C01A8}|KursachBD.csproj|solutionrelative:pages\\product\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Privacy.cshtml",
+              "RelativeToolTip": "Pages\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-07T21:09:09.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Register.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Register.cshtml",
+              "RelativeToolTip": "Pages\\Register.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-07T16:51:48.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Register.cshtml.cs",
+              "RelativeToolTip": "Pages\\Register.cshtml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAmwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T16:55:51.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Authoriz.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Authoriz.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Authoriz.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Authoriz.cshtml",
+              "RelativeToolTip": "Pages\\Authoriz.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-06T16:06:32.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Authoriz.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Authoriz.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Authoriz.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Authoriz.cshtml.cs",
+              "RelativeToolTip": "Pages\\Authoriz.cshtml.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAmwE8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T19:00:05.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Cart.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Cart.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Cart.cshtml",
+              "RelativeToolTip": "Pages\\Cart.cshtml",
+              "ViewState": "AgIAAFMBAAAAAAAAAAAAAEcBAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-06T12:08:14.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cart.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Cart.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Cart.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Cart.cshtml.cs",
+              "RelativeToolTip": "Pages\\Cart.cshtml.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAswNcAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T17:21:27.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T18:20:31.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAwGQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T17:10:19.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\CartService.cs",
+              "RelativeDocumentMoniker": "Pages\\CartService.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\CartService.cs",
+              "RelativeToolTip": "Pages\\CartService.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAowPsAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T16:06:37.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Catalog.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Catalog.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Catalog.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Catalog.cshtml",
+              "RelativeToolTip": "Pages\\Catalog.cshtml",
+              "ViewState": "AgIAAEgCAAAAAAAAAAAAAAwCAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-06T12:17:56.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAAEQAAAAAAAAAAADgv2UAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-06T12:08:18.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Catalog.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Catalog.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Catalog.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Catalog.cshtml.cs",
+              "RelativeToolTip": "Pages\\Catalog.cshtml.cs",
+              "ViewState": "AgIAALIBAAAAAAAAAAAUwA8BAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T12:18:13.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-06T16:06:31.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-06T16:06:30.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAALYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-06T12:08:37.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Customer\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Create.cshtml.cs",
+              "RelativeToolTip": "Pages\\Customer\\Create.cshtml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T21:07:16.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Create.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Customer\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Create.cshtml",
+              "RelativeToolTip": "Pages\\Customer\\Create.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T21:07:15.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "Models\\Review.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\Review.cs",
+              "RelativeToolTip": "Models\\Review.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwA0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T18:20:45.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Models\\Role.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\Role.cs",
+              "RelativeToolTip": "Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T09:16:42.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ProductPriceHistory.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\ProductPriceHistory.cs",
+              "RelativeDocumentMoniker": "Models\\ProductPriceHistory.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\ProductPriceHistory.cs",
+              "RelativeToolTip": "Models\\ProductPriceHistory.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowBoAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T09:16:32.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA9wCkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T16:12:06.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T09:16:21.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "OnlineStoreSellingComputerEquipmentContext.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\OnlineStoreSellingComputerEquipmentContext.cs",
+              "RelativeDocumentMoniker": "Models\\OnlineStoreSellingComputerEquipmentContext.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\OnlineStoreSellingComputerEquipmentContext.cs",
+              "RelativeToolTip": "Models\\OnlineStoreSellingComputerEquipmentContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T12:17:30.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LegalEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\LegalEntity.cs",
+              "RelativeDocumentMoniker": "Models\\LegalEntity.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\LegalEntity.cs",
+              "RelativeToolTip": "Models\\LegalEntity.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA5wBwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T19:38:37.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DeliveryNoteHead.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\DeliveryNoteHead.cs",
+              "RelativeDocumentMoniker": "Models\\DeliveryNoteHead.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\DeliveryNoteHead.cs",
+              "RelativeToolTip": "Models\\DeliveryNoteHead.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCUAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T10:02:22.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DeliveryNoteContent.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\DeliveryNoteContent.cs",
+              "RelativeDocumentMoniker": "Models\\DeliveryNoteContent.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\DeliveryNoteContent.cs",
+              "RelativeToolTip": "Models\\DeliveryNoteContent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T10:02:29.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\Customer.cs",
+              "RelativeToolTip": "Models\\Customer.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T16:54:33.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ContentOfOrder.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\ContentOfOrder.cs",
+              "RelativeDocumentMoniker": "Models\\ContentOfOrder.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\ContentOfOrder.cs",
+              "RelativeToolTip": "Models\\ContentOfOrder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T21:06:44.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ProductType.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\Enums\\ProductType.cs",
+              "RelativeDocumentMoniker": "Models\\Enums\\ProductType.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\Enums\\ProductType.cs",
+              "RelativeToolTip": "Models\\Enums\\ProductType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T21:01:52.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Product\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Details.cshtml",
+              "RelativeToolTip": "Pages\\Product\\Details.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAwEkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-04T17:23:21.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Product\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Delete.cshtml",
+              "RelativeToolTip": "Pages\\Product\\Delete.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-18T19:25:56.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-19T19:18:43.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "KursachBD.csproj",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\KursachBD.csproj",
+              "RelativeDocumentMoniker": "KursachBD.csproj",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\KursachBD.csproj",
+              "RelativeToolTip": "KursachBD.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-19T19:18:33.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-19T12:05:58.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Product\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Product\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T17:23:21.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Customer\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Customer\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-16T19:47:03.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Product_price_history\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Edit.cshtml",
+              "RelativeToolTip": "Pages\\Product_price_history\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-07T19:02:51.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Product_price_history\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Edit.cshtml.cs",
+              "RelativeToolTip": "Pages\\Product_price_history\\Edit.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T14:03:43.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Product_price_history\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Product_price_history\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-06T16:06:29.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Create.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Role\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Create.cshtml",
+              "RelativeToolTip": "Pages\\Role\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-18T19:04:01.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Product_price_history\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Create.cshtml.cs",
+              "RelativeToolTip": "Pages\\Product_price_history\\Create.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T14:03:43.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Create.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Product_price_history\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Create.cshtml",
+              "RelativeToolTip": "Pages\\Product_price_history\\Create.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-06T16:06:25.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Legal_entity\\Details.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Legal_entity\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Legal_entity\\Details.cshtml",
+              "RelativeToolTip": "Pages\\Legal_entity\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-26T10:16:27.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Product\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Edit.cshtml",
+              "RelativeToolTip": "Pages\\Product\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-04T17:23:21.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Create.cshtml",
+              "RelativeToolTip": "Pages\\Product\\Create.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-04T17:23:20.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Details.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Customer\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Details.cshtml",
+              "RelativeToolTip": "Pages\\Customer\\Details.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-26T10:16:37.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Product_price_history\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Delete.cshtml",
+              "RelativeToolTip": "Pages\\Product_price_history\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-06T16:06:26.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Order\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Order\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T15:04:43.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Order\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Edit.cshtml",
+              "RelativeToolTip": "Pages\\Order\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T15:04:43.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Details.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Order\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Details.cshtml",
+              "RelativeToolTip": "Pages\\Order\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T15:04:43.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Order\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Delete.cshtml",
+              "RelativeToolTip": "Pages\\Order\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T15:04:43.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Create.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Order\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Create.cshtml",
+              "RelativeToolTip": "Pages\\Order\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T15:04:43.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Details.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Role\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Details.cshtml",
+              "RelativeToolTip": "Pages\\Role\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-04T17:45:53.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Role\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Delete.cshtml",
+              "RelativeToolTip": "Pages\\Role\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-18T19:04:04.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Role\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Role\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-18T19:02:28.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Legal_entity\\Create.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Legal_entity\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Legal_entity\\Create.cshtml",
+              "RelativeToolTip": "Pages\\Legal_entity\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-04T17:53:33.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Customer\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Edit.cshtml",
+              "RelativeToolTip": "Pages\\Customer\\Edit.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-26T10:14:13.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Customer\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Delete.cshtml",
+              "RelativeToolTip": "Pages\\Customer\\Delete.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T20:28:39.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Legal_entity\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Legal_entity\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Legal_entity\\Edit.cshtml",
+              "RelativeToolTip": "Pages\\Legal_entity\\Edit.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAADgvzwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-02T17:01:30.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Legal_entity\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Legal_entity\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Legal_entity\\Delete.cshtml",
+              "RelativeToolTip": "Pages\\Legal_entity\\Delete.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAADgvzsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-26T10:16:27.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Role\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Edit.cshtml",
+              "RelativeToolTip": "Pages\\Role\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-04T17:45:53.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Legal_entity\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Legal_entity\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Legal_entity\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Legal_entity\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADYAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-27T21:50:50Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Role\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Role\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T19:03:11.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "PagesDiagram.cd",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\PagesDiagram.cd",
+              "RelativeDocumentMoniker": "Pages\\PagesDiagram.cd",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\PagesDiagram.cd",
+              "RelativeToolTip": "Pages\\PagesDiagram.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2026-01-16T10:10:08.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "PagesDiagram.cd",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\PagesDiagram.cd",
+              "RelativeDocumentMoniker": "Models\\PagesDiagram.cd",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Models\\PagesDiagram.cd",
+              "RelativeToolTip": "Models\\PagesDiagram.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2026-01-15T10:32:35.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "OnlineStoreSellingComputerEquipmentContext.dgml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\OnlineStoreSellingComputerEquipmentContext.dgml",
+              "RelativeDocumentMoniker": "OnlineStoreSellingComputerEquipmentContext.dgml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\OnlineStoreSellingComputerEquipmentContext.dgml",
+              "RelativeToolTip": "OnlineStoreSellingComputerEquipmentContext.dgml",
+              "ViewState": "AgIAAEkBAAAAAAAAAAAYwGgBAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-16T09:04:34.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Product\\Details.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Details.cshtml.cs",
+              "RelativeToolTip": "Pages\\Product\\Details.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T17:23:21.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-07T21:55:40.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Product\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Delete.cshtml.cs",
+              "RelativeToolTip": "Pages\\Product\\Delete.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T17:23:21.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-06T16:06:31.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-04T16:53:48.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "Error.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Error.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Error.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Error.cshtml.cs",
+              "RelativeToolTip": "Pages\\Error.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T20:09:27.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-26T10:10:30.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Order\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Create.cshtml.cs",
+              "RelativeToolTip": "Pages\\Order\\Create.cshtml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T11:34:33.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Customer\\Details.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Details.cshtml.cs",
+              "RelativeToolTip": "Pages\\Customer\\Details.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T10:17:05.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Customer\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Customer\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T10:16:41.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Customer\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Customer\\Edit.cshtml.cs",
+              "RelativeToolTip": "Pages\\Customer\\Edit.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T10:17:00.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Legal_entity\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Legal_entity\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Legal_entity\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Legal_entity\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T10:16:29.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Legal_entity\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Legal_entity\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Legal_entity\\Create.cshtml.cs",
+              "RelativeToolTip": "Pages\\Legal_entity\\Create.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T21:52:09.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Role\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Create.cshtml.cs",
+              "RelativeToolTip": "Pages\\Role\\Create.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T16:11:41.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Product\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Create.cshtml.cs",
+              "RelativeToolTip": "Pages\\Product\\Create.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T19:45:47.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Order\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Order\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T15:04:43.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Order\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Edit.cshtml.cs",
+              "RelativeToolTip": "Pages\\Order\\Edit.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T15:04:43.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Order\\Details.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Details.cshtml.cs",
+              "RelativeToolTip": "Pages\\Order\\Details.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T15:04:43.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Order\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Order\\Delete.cshtml.cs",
+              "RelativeToolTip": "Pages\\Order\\Delete.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T15:04:43.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Product_price_history\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Product_price_history\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T14:03:43.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Product_price_history\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Delete.cshtml.cs",
+              "RelativeToolTip": "Pages\\Product_price_history\\Delete.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T14:03:43.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Product_price_history\\Details.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product_price_history\\Details.cshtml.cs",
+              "RelativeToolTip": "Pages\\Product_price_history\\Details.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T14:03:43.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Role\\Details.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Details.cshtml.cs",
+              "RelativeToolTip": "Pages\\Role\\Details.cshtml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAWwBQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T17:45:53.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Role\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Role\\Edit.cshtml.cs",
+              "RelativeToolTip": "Pages\\Role\\Edit.cshtml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAWwBYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T17:45:53.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Product\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\Misha\\source\\repos\\KursachBD\\Pages\\Product\\Edit.cshtml.cs",
+              "RelativeToolTip": "Pages\\Product\\Edit.cshtml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwCIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T17:23:21.379Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

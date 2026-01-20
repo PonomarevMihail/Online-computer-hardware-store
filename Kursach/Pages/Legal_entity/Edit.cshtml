@@ -1,0 +1,66 @@
+﻿@page
+@model KursachBD.Pages.Legal_entity.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>LegalEntity</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="LegalEntity.Inn" />
+
+            <div class="form-group">
+                <label asp-for="LegalEntity.Inn" class="control-label"></label>
+                <input asp-for="LegalEntity.Inn" class="form-control" />
+                <span asp-validation-for="LegalEntity.Inn" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="LegalEntity.Name" class="control-label"></label>
+                <input asp-for="LegalEntity.Name" class="form-control" />
+                <span asp-validation-for="LegalEntity.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="LegalEntity.Surname" class="control-label"></label>
+                <input asp-for="LegalEntity.Surname" class="form-control" />
+                <span asp-validation-for="LegalEntity.Surname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="LegalEntity.Patronymic" class="control-label"></label>
+                <input asp-for="LegalEntity.Patronymic" class="form-control" />
+                <span asp-validation-for="LegalEntity.Patronymic" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="LegalEntity.Company" class="control-label"></label>
+                <input asp-for="LegalEntity.Company" class="form-control" />
+                <span asp-validation-for="LegalEntity.Company" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="LegalEntity.Phone" class="control-label"></label>
+                <input asp-for="LegalEntity.Phone" class="form-control" />
+                <span asp-validation-for="LegalEntity.Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Вернуться к списку</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

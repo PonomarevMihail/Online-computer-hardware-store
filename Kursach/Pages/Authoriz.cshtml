@@ -1,0 +1,46 @@
+﻿@page
+@model KursachBD.Pages.AuthorizModel
+@{
+    ViewData["Title"] = "Вход";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="text-center mb-4">Вход</h2>
+
+                    @if (ViewData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success">@ViewData["SuccessMessage"]</div>
+                    }
+
+                    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+                    {
+                        <div class="alert alert-danger">@Model.ErrorMessage</div>
+                    }
+
+                    <form method="post">
+                        <div class="mb-3">
+                            <label asp-for="Login" class="form-label">Логин</label>
+                            <input asp-for="Login" class="form-control" />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label">Пароль</label>
+                            <input asp-for="Password" class="form-control" type="password" />
+                        </div>
+
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg">Войти</button>
+                        </div>
+
+                        <div class="text-center mt-3">
+                            <span class="text-muted">Нет аккаунта?</span> <a asp-page="/Register">Зарегистрироваться</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

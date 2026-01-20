@@ -1,0 +1,74 @@
+﻿@page
+@model KursachBD.Pages.Product.DetailsModel
+
+@{
+    ViewData["Title"] = "Детали товара";
+}
+
+<h1>Детали товара</h1>
+
+<div>
+    <h4>Товар</h4>
+    <hr />
+    <dl class="row">
+        
+        <dt class="col-sm-2">
+            Название
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Name)
+        </dd>
+
+        <!-- Категория (Русское название) -->
+        <dt class="col-sm-2">
+            Категория
+        </dt>
+        <dd class="col-sm-10">
+            @Model.ProductTypeRus
+        </dd>
+
+        <!-- Характеристики -->
+        <dt class="col-sm-2">
+            Характеристики
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Characteristics)
+        </dd>
+
+        <!-- Цена -->
+        <dt class="col-sm-2">
+            Цена
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Price)
+        </dd>
+
+        <!-- Производитель -->
+        <dt class="col-sm-2">
+            Производитель
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Manufacturer)
+        </dd>
+
+        <!-- Вес -->
+        <dt class="col-sm-2">
+            Вес
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Weight)
+        </dd>
+
+        <!-- Остаток на складе -->
+        <dt class="col-sm-2">
+            Остаток на складе
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.Stock)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Product.ProductId">Изменить</a> 
+    <a asp-page="./Index">Вернуться к списку товаров</a>
+</div>

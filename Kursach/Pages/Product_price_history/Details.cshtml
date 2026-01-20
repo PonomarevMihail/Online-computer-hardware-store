@@ -1,0 +1,49 @@
+﻿@page
+@model KursachBD.Pages.Product_price_history.DetailsModel
+
+@{
+    ViewData["Title"] = "Информация об изменениях цен";
+}
+
+<h1>Информация</h1>
+
+<div>
+    <h4>История изменения цен</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Прошлая цена
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProductPriceHistory.OldPrice)
+        </dd>
+        <dt class="col-sm-2">
+            Новая цена
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProductPriceHistory.NewPrice)
+        </dd>
+        <dt class="col-sm-2">
+            Дата изменения
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProductPriceHistory.ChangedAt)
+        </dd>
+        <dt class="col-sm-2">
+            Изменил
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProductPriceHistory.ChangedBy)
+        </dd>
+        <dt class="col-sm-2">
+            Номер продукта
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProductPriceHistory.ProductId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.ProductPriceHistory.HistoryId">Изменить</a> |
+    <a asp-page="./Index">Вернуться к списку</a>
+</div>

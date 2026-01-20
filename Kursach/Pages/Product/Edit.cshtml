@@ -1,0 +1,147 @@
+﻿@page
+@model KursachBD.Pages.Product.EditModel
+
+@{
+    ViewData["Title"] = "Изменить";
+}
+
+<h1>Изменить</h1>
+
+<h4>Продукт</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Product.ProductId" />
+            <div class="form-group">
+                
+                <label asp-for="Product.Name" class="control-label">Название</label>
+                <input asp-for="Product.Name" class="form-control" />
+                <span asp-validation-for="Product.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="Product.Characteristics" class="control-label">Характеристики</label>
+                <input asp-for="Product.Characteristics" class="form-control" />
+                <span asp-validation-for="Product.Characteristics" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="Product.Price" class="control-label">Цена</label>
+                <input asp-for="Product.Price" class="form-control" />
+                <span asp-validation-for="Product.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="Product.Manufacturer" class="control-label">Производитель</label>
+                <input asp-for="Product.Manufacturer" class="form-control" />
+                <span asp-validation-for="Product.Manufacturer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="Product.Weight" class="control-label">Вес товара</label>
+                <input asp-for="Product.Weight" class="form-control" />
+                <span asp-validation-for="Product.Weight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="Product.Stock" class="control-label">Количество товара</label>
+                <input asp-for="Product.Stock" class="form-control" />
+                <span asp-validation-for="Product.Stock" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group mb-3">
+                <label asp-for="Product.TypeOfProduct" class="control-label">Категория товара</label>
+                <select asp-for="Product.TypeOfProduct" class="form-select">
+                    <option value="">-- Выберите категорию --</option>
+
+                    <optgroup label="Компьютерные системы">
+                        <option value="laptop">Ноутбуки</option>
+                        <option value="desktop">Настольные ПК</option>
+                        <option value="all_in_one">Моноблоки</option>
+                        <option value="workstation">Рабочие станции</option>
+                        <option value="server">Серверы</option>
+                    </optgroup>
+
+                    <optgroup label="Комплектующие ПК">
+                        <option value="processor">Процессоры</option>
+                        <option value="motherboard">Материнские платы</option>
+                        <option value="ram">Оперативная память</option>
+                        <option value="video_card">Видеокарты</option>
+                        <option value="power_supply">Блоки питания</option>
+                        <option value="computer_case">Корпуса</option>
+                        <option value="cooling_system">Системы охлаждения</option>
+                    </optgroup>
+
+                    <optgroup label="Накопители">
+                        <option value="ssd">SSD накопители</option>
+                        <option value="hdd">Жесткие диски</option>
+                        <option value="external_drive">Внешние накопители</option>
+                        <option value="flash_drive">Флеш-накопители</option>
+                        <option value="memory_card">Карты памяти</option>
+                    </optgroup>
+
+                    <optgroup label="Периферия">
+                        <option value="monitor">Мониторы</option>
+                        <option value="keyboard">Клавиатуры</option>
+                        <option value="mouse">Мыши</option>
+                        <option value="headphones">Наушники</option>
+                        <option value="webcam">Веб-камеры</option>
+                        <option value="microphone">Микрофоны</option>
+                        <option value="speakers">Колонки</option>
+                    </optgroup>
+
+                    <optgroup label="Сетевое оборудование">
+                        <option value="router">Маршрутизаторы</option>
+                        <option value="network_adapter">Сетевые адаптеры</option>
+                        <option value="wifi_extender">Wi-Fi усилители</option>
+                    </optgroup>
+
+                    <optgroup label="Офисная техника">
+                        <option value="printer">Принтеры</option>
+                        <option value="scanner">Сканеры</option>
+                        <option value="multifunction_device">МФУ</option>
+                    </optgroup>
+
+                    <optgroup label="Игровая периферия">
+                        <option value="gaming_mouse">Игровые мыши</option>
+                        <option value="gaming_keyboard">Игровые клавиатуры</option>
+                        <option value="gamepad">Геймпады</option>
+                        <option value="joystick">Джойстики</option>
+                        <option value="vr_headset">VR очки</option>
+                    </optgroup>
+
+                    <optgroup label="Аксессуары">
+                        <option value="mouse_pad">Коврики для мыши</option>
+                        <option value="usb_hub">USB-хабы</option>
+                        <option value="cable">Кабели</option>
+                        <option value="adapter">Адаптеры</option>
+                        <option value="laptop_bag">Сумки для ноутбуков</option>
+                    </optgroup>
+
+                    <optgroup label="Прочее">
+                        <option value="software">Программное обеспечение</option>
+                        <option value="component">Комплектующие</option>
+                        <option value="accessory">Аксессуары</option>
+                    </optgroup>
+                </select>
+                <span asp-validation-for="Product.TypeOfProduct" class="text-danger"></span>
+            </div>
+            
+
+            <div class="form-group mt-3">
+                <input type="submit" value="Сохранить" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Вернуться в Каталог</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,66 @@
+﻿@page
+@model KursachBD.Pages.Product.IndexModel
+
+@{
+    ViewData["Title"] = "Продукты";
+}
+
+<h1>Продукты</h1>
+
+<p>
+    <a asp-page="Create">Добавить новый продукт</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Имя
+            </th>
+            <th>
+                Характеристики
+            </th>
+            <th>
+                Цена
+            </th>
+            <th>
+                Производитель
+            </th>
+            <th>
+                Вес
+            </th>
+            <th>
+                Остаток на складе
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Product) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Characteristics)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Manufacturer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stock)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ProductId">Изменить</a> |
+                <a asp-page="./Details" asp-route-id="@item.ProductId">Сведения</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ProductId">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,46 @@
+﻿@page
+@model KursachBD.Pages.Product_price_history.CreateModel
+
+        @{
+        ViewData["Title"] = "Создать";
+        }
+        
+        <h1>Создать</h1>
+
+<h4>История изменения цен</h4>
+    <hr />
+    <div class="row">
+    <div class="col-md-4">
+    <form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="ProductPriceHistory.ProductId" class="control-label">Номер продукта</label>
+                <select asp-for="ProductPriceHistory.ProductId" class ="form-control" asp-items="ViewBag.ProductId"></select>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="ProductPriceHistory.OldPrice" class="control-label">Старая цена</label>
+                <input asp-for="ProductPriceHistory.OldPrice" class="form-control" />
+                <span asp-validation-for="ProductPriceHistory.OldPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="ProductPriceHistory.NewPrice" class="control-label">Новая цена</label>
+                <input asp-for="ProductPriceHistory.NewPrice" class="form-control" />
+                <span asp-validation-for="ProductPriceHistory.NewPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Вернуться к списку</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

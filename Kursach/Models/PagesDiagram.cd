@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="KursachBD.Models.ContentOfOrder">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAQAAAAAAAAAAAAAAAQAAAAACAAAAgAAAAAA=</HashCode>
+      <FileName>Models\ContentOfOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.Customer">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACIAACAAAAAAEAAAAAQABAAAABACAAAQIAAAAAA=</HashCode>
+      <FileName>Models\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.DeliveryNoteContent">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAACEAEAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Models\DeliveryNoteContent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.DeliveryNoteHead">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIAIAAACAAAEAAAApAAQAACIAAAAAAAAAQAAAAAAEAA=</HashCode>
+      <FileName>Models\DeliveryNoteHead.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.LegalEntity">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAADAAAAAAQAAAAAAAAAQARAAAAAAAAAAAJAAAACA=</HashCode>
+      <FileName>Models\LegalEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.OnlineStoreSellingComputerEquipmentContext">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEAAAQAQAAAAAAAAAAAAEgAAEAAAAQBIAEAAAAQ=</HashCode>
+      <FileName>Models\OnlineStoreSellingComputerEquipmentContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.PaymentDateNotFutureAttribute">
+    <Position X="10.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.DeliveryDateRangeAttribute">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.Order">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAQEAAAAABCAAAAAAAAAAEBACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.Product">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAgAAEAAAQAAAAAACAAAAAQAgCAAEQAAAQAIAAAAAAA=</HashCode>
+      <FileName>Models\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.ProductPriceHistory">
+    <Position X="13" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAGAAAAAAAAAAAAAAAAAAAAAAAACAAAAAASAAAAACA=</HashCode>
+      <FileName>Models\ProductPriceHistory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.Review">
+    <Position X="15.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAECAAAAAAAAAAAAACEAAAAAAAAAABEAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\Review.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.Role">
+    <Position X="3.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Models\Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="KursachBD.Models.Enums.ProductType">
+    <Position X="9" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwGhCDIAAkUYAEDAIACAEBAkAhAgAAwAAAIBQCAVQM=</HashCode>
+      <FileName>Models\Enums\ProductType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

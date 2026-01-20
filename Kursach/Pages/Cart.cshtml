@@ -1,0 +1,366 @@
+﻿@page
+@model KursachBD.Pages.CartModel
+@{
+    ViewData["Title"] = "Корзина покупок";
+}
+
+<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+
+    @if (Model.CartItems.Any())
+    {
+        <div class="row">
+            <div class="col-md-8">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div></div>
+                    <button class="btn btn-outline-danger" onclick="clearCart(event)" title="Очистить всю корзину">
+                        <i class="bi bi-trash3"></i> Очистить корзину
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        @foreach (var item in Model.CartItems)
+                        {
+                            <div class="row mb-3 border-bottom pb-3" data-product-id="@item.ProductId">
+                                <div class="col-md-6">
+                                    <div class="bg-light text-center p-2">
+                                        <img src="~/images/icon.png" class="img-fluid" style="max-height: 80px; max-width: 80px;" alt="@item.ProductName" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="h6">@item.ProductName</h5>
+                                    <p class="text-muted small">@item.Manufacturer</p>
+                                    <p class="text-muted small mb-2">
+                                        <i class="bi bi-box-seam me-1"></i> Вес: @item.Weight.ToString("N3") кг
+                                    </p>
+                                    <p class="text-muted small mb-2">
+                                        <i class="bi bi-shop me-1"></i> В наличии: <span class="stock-quantity" id="stock-@item.ProductId">@item.Stock</span> шт.
+                                    </p>
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn btn-outline-secondary btn-sm px-2" onclick="adjustQuantity(@item.ProductId, -1)" title="Убрать 1 шт.">
+                                            <i class="bi bi-dash"></i>
+                                        </button>
+                                        <span class="mx-2" id="quantity-@item.ProductId">@item.Quantity</span>
+                                        
+                                        <button class="btn btn-outline-secondary btn-sm px-2 btn-plus"
+                                                data-id="@item.ProductId"
+                                                onclick="adjustQuantity(@item.ProductId, 1)"
+                                                title="Добавить 1 шт."
+                                                disabled="@(item.Quantity >= item.Stock ? "disabled" : null)">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                        <button class="btn btn-outline-danger btn-sm ms-3" onclick="removeFromCart(@item.ProductId)" title="Удалить из корзины">
+                                            <i class="bi bi-trash"></i> Удалить
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 text-end">
+                                    <h6 class="mb-1" id="total-@item.ProductId">@((item.Price * item.Quantity).ToString("N2")) ₽</h6>
+                                    <p class="text-muted small">@item.Price.ToString("N2") ₽/шт.</p>
+                                    <p class="text-muted small">
+                                        <i class="bi bi-box-seam me-1"></i>
+                                        <span id="total-weight-@item.ProductId">@((item.Weight * item.Quantity).ToString("N3"))</span> кг
+                                    </p>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Итого</h5>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Товары (@Model.TotalItems шт.)</span>
+                            <span id="subtotal">@Model.SubTotal.ToString("N2") ₽</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span><i class="bi bi-box-seam me-1"></i> Общий вес</span>
+                            <span id="total-weight">@Model.TotalWeight.ToString("N3") кг</span>
+                        </div>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            Доставка
+                            <span id="cart-shipping" class="@(Model.ShippingCost == 0 ? "text-success fw-bold" : "")">
+                                @(Model.ShippingCost == 0 ? "Бесплатно" : Model.ShippingCost.ToString("N2") + " ₽")
+                            </span>
+                        </li>
+                        <div class="d-flex justify-content-between mb-4">
+                            <strong>Общая сумма</strong>
+                            <strong id="total">@Model.Total.ToString("N2") ₽</strong>
+                        </div>
+
+                        <button class="btn btn-success w-100 mb-2 btn-lg" onclick="openCheckoutModal()">
+                            <i class="bi bi-credit-card"></i> Оформить заказ
+                        </button>
+
+                        <a asp-page="/Catalog" class="btn btn-outline-secondary w-100">Продолжить покупки</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="text-center py-5">
+            <i class="bi bi-cart-x display-6 text-muted mb-3"></i>
+            <h4>Ваша корзина пуста</h4>
+            <p class="text-muted mb-4">Добавьте товары из каталога</p>
+            <a asp-page="/Catalog" class="btn btn-primary">Перейти в каталог</a>
+        </div>
+    }
+</div>
+
+<!-- Модальное окно оформления заказа -->
+<div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="checkoutModalLabel">Оформление заказа</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="deliveryAddress" class="form-label">Адрес доставки</label>
+                    <textarea class="form-control" id="deliveryAddress" rows="3" placeholder="Введите адрес доставки">@Model.CurrentCustomerAddress</textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="paymentMethod" class="form-label">Способ оплаты</label>
+                    <select class="form-select" id="paymentMethod">
+                        <option value="card" selected>Банковская карта</option>
+                        <option value="sbp">Система быстрых платежей (СБП)</option>
+                    </select>
+                </div>
+                <div class="alert alert-info small">
+                    <i class="bi bi-info-circle"></i> Нажимая кнопку "Подтвердить заказ", вы соглашаетесь с условиями доставки.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                <button type="button" class="btn btn-primary" onclick="submitOrder()">Подтвердить заказ</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form method="post" id="cartForm" style="display: none;">
+    <input type="hidden" id="productId" name="ProductId" value="" />
+    <input type="hidden" id="changeValue" name="Change" value="" />
+    @Html.AntiForgeryToken()
+</form>
+
+@section Scripts {
+    <script>
+        let isProcessing = false;
+        let checkoutModal = null;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            checkoutModal = new bootstrap.Modal(document.getElementById('checkoutModal'));
+        });
+
+        function openCheckoutModal() { if(checkoutModal) checkoutModal.show(); }
+
+        async function submitOrder() {
+            if (isProcessing) return;
+            const address = document.getElementById('deliveryAddress').value;
+            const paymentMethod = document.getElementById('paymentMethod').value;
+
+            if (!address || address.trim() === '') { alert('Пожалуйста, укажите адрес доставки.'); return; }
+            isProcessing = true;
+            const confirmBtn = document.querySelector('#checkoutModal .btn-primary');
+            const originalText = confirmBtn.innerHTML;
+            confirmBtn.disabled = true;
+            confirmBtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Обработка...';
+
+            try {
+                const tokenData = await (await fetch('/Cart?handler=AntiforgeryToken')).json();
+                const formData = new FormData();
+                formData.append('DeliveryAddress', address);
+                formData.append('PaymentMethod', paymentMethod);
+                formData.append('__RequestVerificationToken', tokenData.token);
+
+                const response = await fetch('/Cart?handler=Checkout', { method: 'POST', body: formData });
+                const result = await response.json();
+
+                if (result.success) {
+                    checkoutModal.hide();
+                    broadcastClearCart();
+                    showNotification(result.message, 'success');
+                    setTimeout(() => location.reload(), 2000);
+                } else {
+                    showNotification(result.message, 'danger');
+                    confirmBtn.disabled = false;
+                    confirmBtn.innerHTML = originalText;
+                }
+            } catch (error) {
+                console.error('Ошибка:', error);
+                showNotification('Произошла ошибка при оформлении заказа', 'danger');
+                confirmBtn.disabled = false;
+                confirmBtn.innerHTML = originalText;
+            } finally { isProcessing = false; }
+        }
+
+               async function adjustQuantity(productId, change) {
+            if (isProcessing) return;
+
+            // Блокируем кнопку, на которую нажали, чтобы не кликали быстро
+            const btnClicked = change > 0
+                ? document.querySelector(`button.btn-plus[data-id="${productId}"]`)
+                : null;
+
+            isProcessing = true;
+            try {
+                const form = document.getElementById('cartForm');
+                document.getElementById('productId').value = productId;
+                document.getElementById('changeValue').value = change;
+                const formData = new FormData(form);
+
+                const response = await fetch('/Cart?handler=AdjustQuantity', { method: 'POST', body: formData });
+                const result = await response.json();
+
+                if (result.success) {
+                    if (result.itemRemoved) {
+                        location.reload();
+                    } else {
+                        // 1. Обновляем цифры
+                        const qtyElem = document.getElementById(`quantity-${productId}`);
+                        if (qtyElem) qtyElem.textContent = parseInt(qtyElem.textContent) + change;
+
+                        document.getElementById(`total-${productId}`).textContent = result.itemTotal + ' ₽';
+                        document.getElementById(`total-weight-${productId}`).textContent = result.itemWeight + ' кг';
+
+                        updateCartStockOnPage(productId, result.currentStock);
+                        updateTotals(result);
+                        broadcastStockUpdate(productId, result.currentStock);
+
+                        // 2. ЛОГИКА БЛОКИРОВКИ КНОПКИ +
+                        const plusBtn = document.querySelector(`button.btn-plus[data-id="${productId}"]`);
+                        if (plusBtn) {
+                            // Получаем новое количество
+                            const newQty = parseInt(qtyElem.textContent);
+                            // Если достигли лимита -> блокируем
+                            if (newQty >= result.currentStock) {
+                                plusBtn.disabled = true;
+                            } else {
+                                plusBtn.disabled = false;
+                            }
+                        }
+
+                        showNotification(`Количество изменено: ${change > 0 ? '+1' : '-1'}`, 'success');
+                    }
+                } else {
+                    // Если пришла ошибка (например "Нельзя добавить больше")
+                    showNotification(result.message, 'danger');
+                }
+            } catch (error) {
+                console.error(error);
+                showNotification('Ошибка изменения количества', 'danger');
+            } finally {
+                isProcessing = false;
+            }
+        }
+
+        async function removeFromCart(productId) {
+            if (isProcessing || !confirm('Удалить товар?')) return;
+            isProcessing = true;
+            try {
+                const form = document.getElementById('cartForm');
+                document.getElementById('productId').value = productId;
+                const response = await fetch('/Cart?handler=RemoveFromCart', { method: 'POST', body: new FormData(form) });
+                const result = await response.json();
+                if (result.success) {
+                    // Обновляем итоги после удаления
+                    updateTotals(result);
+
+                    // Удаляем элемент со страницы или перезагружаем
+                    updateCartStockOnPage(productId, result.currentStock);
+                    broadcastStockUpdate(productId, result.currentStock);
+                    showNotification('Товар удален', 'success');
+                    setTimeout(() => location.reload(), 500); 
+                } else showNotification(result.message, 'danger');
+            } catch (e) { showNotification('Ошибка удаления', 'danger'); } finally { isProcessing = false; }
+        }
+
+        async function clearCart(event) {
+            const btn = event.currentTarget;
+            if (!confirm('Очистить корзину?')) return;
+            btn.disabled = true;
+            try {
+                const tokenData = await (await fetch('/Cart?handler=AntiforgeryToken')).json();
+                const formData = new FormData(); formData.append('__RequestVerificationToken', tokenData.token);
+                const response = await fetch('/Cart?handler=ClearCart', { method: 'POST', body: formData });
+                const result = await response.json();
+                if (result.success) {
+                    broadcastClearCart();
+                    showNotification('Корзина очищена', 'success');
+                    setTimeout(() => location.reload(), 1000);
+                } else { showNotification(result.message, 'danger'); btn.disabled = false; }
+            } catch (e) { showNotification('Ошибка', 'danger'); btn.disabled = false; }
+        }
+
+        // --- Функция обновления товаров в корзине ---
+        function updateTotals(result) {
+            
+            const subTotalEl = document.getElementById('subtotal');
+            if (subTotalEl) subTotalEl.textContent = result.subTotal + ' ₽';
+
+            
+            const weightEl = document.getElementById('total-weight');
+            if (weightEl) weightEl.textContent = result.totalWeight + ' кг';
+
+            
+            const totalEl = document.getElementById('total');
+            if (totalEl) totalEl.textContent = result.total + ' ₽';
+
+            
+            const shippingEl = document.getElementById('cart-shipping');
+            if (shippingEl) {
+                // Сервер возвращает строку "0,00" или "500,00".
+                // Убираем пробелы (разделители тысяч) и меняем запятую на точку для проверки
+                const priceStr = result.shippingCost.replace(/\s/g, '').replace(',', '.');
+                const price = parseFloat(priceStr);
+
+                if (price === 0) {
+                    shippingEl.textContent = "Бесплатно";
+                    shippingEl.className = "text-success fw-bold";
+                } else {
+                    shippingEl.textContent = result.shippingCost + ' ₽';
+                    shippingEl.className = ""; 
+                }
+            }
+
+            // Обновляем значок корзины в шапке
+            const globalCount = document.getElementById('globalCartCount');
+            if (globalCount && result.cartCount !== undefined) {
+                globalCount.textContent = result.cartCount;
+            }
+        }
+
+        // --- Вспомогательные функции ---
+
+        function updateCartStockOnPage(productId, newStock) {
+            document.querySelectorAll(`[data-product-id="${productId}"]`).forEach(el => {
+                const stock = el.querySelector('.stock-quantity');
+                if (stock) stock.textContent = newStock;
+                const plus = el.querySelector('button[title="Добавить 1 шт."]');
+                if (plus) plus.disabled = newStock <= 0;
+            });
+        }
+
+        function broadcastStockUpdate(productId, newStock) {
+            if (typeof BroadcastChannel !== 'undefined') new BroadcastChannel('catalog-updates').postMessage({ type: 'stock-updated', productId, newStock });
+        }
+        function broadcastClearCart() {
+            if (typeof BroadcastChannel !== 'undefined') new BroadcastChannel('catalog-updates').postMessage({ type: 'cart-cleared' });
+        }
+
+        function showNotification(msg, type) {
+            const n = document.createElement('div');
+            n.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
+            n.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+            n.innerHTML = `<div>${msg}</div><button type="button" class="btn-close" data-bs-dismiss="alert"></button>`;
+            document.body.appendChild(n);
+            setTimeout(() => n.remove(), 3000);
+        }
+    </script>
+}

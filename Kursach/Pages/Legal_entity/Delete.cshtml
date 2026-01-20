@@ -1,0 +1,62 @@
+﻿@page
+@model KursachBD.Pages.Legal_entity.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Вы действительно хотите это удалить?</h3>
+<div>
+    <h4>LegalEntity</h4>
+    <hr />
+    <dl class="row">
+
+      
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LegalEntity.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LegalEntity.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LegalEntity.Surname)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LegalEntity.Surname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LegalEntity.Patronymic)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LegalEntity.Patronymic)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LegalEntity.Company)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LegalEntity.Company)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LegalEntity.Phone)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LegalEntity.Phone)
+        </dd>
+
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LegalEntity.Inn)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LegalEntity.Inn)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="LegalEntity.Inn" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Вернуться к списку</a>
+    </form>
+</div>
