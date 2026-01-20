@@ -1,0 +1,602 @@
+﻿@page
+@model KursachBD.Pages.CatalogModel
+@{
+    ViewData["Title"] = "Каталог товаров";
+}
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <!-- Фильтры и категории (левая колонка) -->
+        <div class="col-md-3">
+            <div class="card mb-4 sticky-top" style="top: 20px; z-index: 100;">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="bi bi-filter"></i> Фильтры</h5>
+                </div>
+                <div class="card-body">
+                    <!-- ПАНЕЛЬ АДМИНИСТРАТОРА -->
+                    @if (Model.IsAdmin)
+                    {
+                        <div class="mb-3 border-bottom pb-3">
+                            <h6 class="fw-bold text-danger text-center ">Панель управления</h6>
+                            <a asp-page="/Product/Create" class="btn btn-outline-success w-100 mb-2 btn-sm">
+                                <i class="bi bi-plus-circle"></i> Добавить товар
+                            </a>
+                            <a asp-page="/Product/Index" class="btn btn-outline-primary w-100 mb-2 btn-sm">
+                                <i class="bi bi-list-ul"></i> Таблица товаров
+                            </a>
+                            <a asp-page="/Order/Index" class="btn btn-outline-primary w-100 mb-2 btn-sm">
+                                <i class="bi bi-list-ul"></i> Таблица заказов
+                            </a>
+                            <a asp-page="/Customer/Index" class="btn btn-outline-primary w-100 mb-2 btn-sm">
+                                <i class="bi bi-list-ul"></i> Таблица пользователей
+                            </a>
+                            <a asp-page="/Role/Index" class="btn btn-outline-primary w-100 mb-2 btn-sm">
+                                <i class="bi bi-list-ul"></i> Таблица ролей
+                            </a>
+                            <a asp-page="/Product_price_history/Index" class="btn btn-outline-primary w-100 mb-2 btn-sm">
+                                <i class="bi bi-list-ul"></i> Таблица изменения цен
+                            </a>
+                            <button class="btn btn-outline-dark w-100 mb-2 btn-sm" data-bs-toggle="modal" data-bs-target="#statsModal">
+                                <i class="bi bi-graph-up"></i> Статистика продаж
+                            </button>
+                            <button class="btn btn-outline-dark w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#historyModal">
+                                <i class="bi bi-person-lines-fill"></i> История клиента
+                            </button>
+                        </div>
+                    }
+
+                    <div class="mb-3">
+                        <a asp-page="/Catalog" asp-route-group="" asp-route-category="" class="btn btn-outline-danger w-100 btn-sm">
+                            <i class="bi bi-x-circle"></i> Сбросить фильтры
+                        </a>
+                    </div>
+
+                    <div class="accordion mb-3" id="accordionCategories">
+                        @foreach (var group in Model.GroupedCategories)
+                        {
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button @(Model.SelectedGroup != group.Key ? "collapsed" : "") py-2"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapse-@group.Key">
+                                        @Model.GetGroupDisplayName(group.Key)
+                                    </button>
+                                </h2>
+                                <div id="collapse-@group.Key"
+                                     class="accordion-collapse collapse @(Model.SelectedGroup == group.Key ? "show" : "")"
+                                     data-bs-parent="#accordionCategories">
+                                    <div class="accordion-body p-1 ps-3">
+                                        @foreach (var category in group.Value)
+                                        {
+                                            <a asp-page="/Catalog"
+                                               asp-route-group="@group.Key"
+                                               asp-route-category="@category.Id"
+                                               class="d-block text-decoration-none py-1 ps-2 rounded @(Model.SelectedCategory == category.Id ? "bg-primary text-white" : "text-dark hover-bg-light")">
+                                                @category.Name
+                                            </a>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                    <!--ДИНАМИЧЕСКИЕ ХАРАКТЕРИСТИКИ-->
+                    
+                    @if (Model.AvailableFilters.Any())
+                    {
+                        <hr />
+                        <form method="get" id="specFilterForm">
+                            <!-- Сохраняем текущие параметры навигации -->
+                            <input type="hidden" name="group" value="@Model.SelectedGroup" />
+                            <input type="hidden" name="category" value="@Model.SelectedCategory" />
+                            <input type="hidden" name="search" value="@Model.SearchQuery" />
+                            <input type="hidden" name="sort" value="@Model.SortBy" />
+
+                            <h6 class="fw-bold mt-3">Характеристики</h6>
+
+                            @foreach (var filter in Model.AvailableFilters)
+                            {
+                                <div class="mb-3">
+                                    <label class="fw-bold small text-muted">@filter.Key</label>
+                                    <select class="form-select form-select-sm"
+                                            name="spec_@filter.Key"
+                                            onchange="document.getElementById('specFilterForm').submit()">
+                                        <option value="">Все</option>
+                                        @foreach (var val in filter.Value)
+                                        {
+                                            <option value="@val" selected="@(Model.SelectedSpecs.ContainsKey(filter.Key) && Model.SelectedSpecs[filter.Key] == val)">
+                                                @val
+                                            </option>
+                                        }
+                                    </select>
+                                </div>
+                            }
+                        </form>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Товары (правая колонка) -->
+        <div class="col-md-9">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <h4 class="mb-0">Каталог товаров</h4>
+                        <small class="text-muted">Найдено: @Model.TotalProducts шт.</small>
+                    </div>
+
+                    <div class="d-flex gap-2 align-items-center">
+                        <form method="get" class="d-flex">
+                            @if (!string.IsNullOrEmpty(Model.SelectedGroup))
+                            {
+                                <input type="hidden" name="group" value="@Model.SelectedGroup" />
+                            }
+                            @if (!string.IsNullOrEmpty(Model.SelectedCategory))
+                            {
+                                <input type="hidden" name="category" value="@Model.SelectedCategory" />
+                            }
+
+                            <!-- Сохраняем фильтры при поиске -->
+                            @foreach (var spec in Model.SelectedSpecs)
+                            {
+                                <input type="hidden" name="spec_@spec.Key" value="@spec.Value" />
+                            }
+
+                            <input type="text" name="search" class="form-control form-control-sm me-2" placeholder="Поиск..." value="@Model.SearchQuery">
+                            <button class="btn btn-outline-primary btn-sm" type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                <i class="bi bi-sort-down"></i> Сортировка
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                @{
+                                    var routeData = new Dictionary<string, string>
+                                    {
+                                       { "group", Model.SelectedGroup },
+                                       { "category", Model.SelectedCategory },
+                                       { "search", Model.SearchQuery }
+                                    };
+                                    foreach (var spec in Model.SelectedSpecs)
+                                    {
+                                        routeData.Add("spec_" + spec.Key, spec.Value);
+                                    }
+                                }
+
+                                <li><a class="dropdown-item @(Model.SortBy == "new" ? "active" : "")" asp-page="/Catalog" asp-all-route-data="routeData" asp-route-sort="new">Новинки</a></li>
+                                <li><a class="dropdown-item @(Model.SortBy == "price_asc" ? "active" : "")" asp-page="/Catalog" asp-all-route-data="routeData" asp-route-sort="price_asc">Дешевле</a></li>
+                                <li><a class="dropdown-item @(Model.SortBy == "price_desc" ? "active" : "")" asp-page="/Catalog" asp-all-route-data="routeData" asp-route-sort="price_desc">Дороже</a></li>
+                                <li><a class="dropdown-item @(Model.SortBy == "name_asc" ? "active" : "")" asp-page="/Catalog" asp-all-route-data="routeData" asp-route-sort="name_asc">А-Я</a></li>
+                                <li><a class="dropdown-item @(Model.SortBy == "name_desc" ? "active" : "")" asp-page="/Catalog" asp-all-route-data="routeData" asp-route-sort="name_desc">Я-А</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @if (!Model.Products.Any())
+            {
+                <div class="alert alert-info text-center py-5">
+                    <i class="bi bi-search display-4"></i>
+                    <p class="mt-3">Товары не найдены. Попробуйте изменить параметры фильтрации.</p>
+                </div>
+            }
+            else
+            {
+                <div class="d-flex flex-column gap-3">
+                    @foreach (var product in Model.Products)
+                    {
+                        <div class="card product-card shadow-sm border-0" data-product-id="@product.ProductId">
+                            <div class="row g-0">
+                                <div class="col-md-3 d-flex align-items-center justify-content-center bg-light p-3 position-relative">
+                                    @if (product.Stock <= 0)
+                                    {
+                                        <span class="badge bg-secondary position-absolute top-0 start-0 m-2">Нет в наличии</span>
+                                    }
+
+                                    <img src="~/images/icon.png" class="img-fluid" style="max-height: 180px; object-fit: contain;" alt="@product.Name">
+                                </div>
+
+                                <div class="col-md-6 border-end">
+                                    <div class="card-body h-100 d-flex flex-column">
+                                        <div class="mb-2">
+                                            <small class="text-muted">@product.Manufacturer</small>
+                                            <h5 class="card-title mb-1 text-primary">@product.Name</h5>
+
+                                            @{
+                                                var avg = product.Reviews?.Any() == true ? product.Reviews.Average(r => r.Rating ?? 0) : 0;
+                                                var count = product.Reviews?.Count ?? 0;
+                                            }
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-warning me-1">
+                                                    @for (int i = 1; i <= 5; i++)
+                                                    {
+                                                        <i class="bi @(i <= avg ? "bi-star-fill" : "bi-star") small"></i>
+                                                    }
+                                                </span>
+                                                <a href="#reviews-@product.ProductId" class="text-decoration-none small text-muted" data-bs-toggle="collapse">@count отзывов</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="small text-muted flex-grow-1">
+                                            <ul class="list-unstyled mb-0">
+                                                <li><strong>Тип:</strong> @Model.GetCategoryDisplayName(product.TypeOfProduct.ToString())</li>
+                                                <li><strong>Вес:</strong> @product.Weight кг</li>
+                                                @if (!string.IsNullOrEmpty(product.Characteristics))
+                                                {
+                                                    var chars = product.Characteristics.Length > 150
+                                                    ? product.Characteristics.Substring(0, 150) + "..."
+                                                    : product.Characteristics;
+                                                    <li class="mt-2 text-dark">@chars</li>
+                                                }
+                                            </ul>
+                                        </div>
+
+                                        @if (Model.IsAdmin)
+                                        {
+                                            <div class="mt-3 border-top pt-2 d-flex justify-content-between align-items-center">
+                                                <small class="text-muted fw-bold" style="font-size: 0.75rem;">ID: @product.ProductId</small>
+
+                                                <div class="btn-group btn-group-sm" role="group">
+                                                    <a asp-page="/Product/Edit" asp-route-id="@product.ProductId"
+                                                       class="btn btn-outline-dark" title="Редактировать">
+                                                        <i class="bi bi-pencil-square"></i> Редактировать
+                                                    </a>
+                                                    <a asp-page="/Product/Details" asp-route-id="@product.ProductId"
+                                                       class="btn btn-outline-secondary" title="Детали">
+                                                        <i class="bi bi-eye"></i> Детали
+                                                    </a>
+                                                    <a asp-page="/Product/Delete" asp-route-id="@product.ProductId"
+                                                       class="btn btn-outline-danger" title="Удалить">
+                                                        <i class="bi bi-trash"></i> Удалить
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 bg-light bg-opacity-25">
+                                    <div class="card-body h-100 d-flex flex-column justify-content-center align-items-center text-center">
+                                        <h4 class="mb-3 fw-bold">@product.Price.ToString("N0") ₽</h4>
+                                        <div class="mb-2 w-100 px-3">
+                                            @if (product.Stock > 0)
+                                            {
+                                                <div class="text-success small mb-2"><i class="bi bi-check-circle-fill"></i> В наличии: <span class="stock-quantity">@product.Stock</span></div>
+                                                <form onsubmit="addToCart(event, @product.ProductId)" class="w-100">
+                                                    @Html.AntiForgeryToken()
+                                                    <button type="submit" class="btn btn-primary w-100 add-to-cart-btn">
+                                                        <i class="bi bi-cart-plus"></i> В корзину
+                                                    </button>
+                                                </form>
+                                            }
+                                            else
+                                            {
+                                                <div class="text-muted small mb-2">Нет в наличии</div>
+                                                <button class="btn btn-secondary w-100" disabled>Уведомить</button>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="collapse bg-light border-top" id="reviews-@product.ProductId">
+                                <div class="p-3">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h6 class="mb-0">Отзывы покупателей</h6>
+                                        @if (User.Identity?.IsAuthenticated == true)
+                                        {
+                                            <button class="btn btn-sm btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#reviewForm-@product.ProductId">
+                                                Написать отзыв
+                                            </button>
+                                        }
+                                        else
+                                        {
+                                            <a href="/Authoriz" class="small">Войдите, чтобы написать отзыв</a>
+                                        }
+                                    </div>
+                                    <div class="collapse mb-3" id="reviewForm-@product.ProductId">
+                                        <form onsubmit="submitReview(event, @product.ProductId)" class="card p-3 shadow-sm">
+                                            <div class="mb-2">
+                                                <label class="form-label small">Ваша оценка:</label>
+                                                <div class="rating-input">
+                                                    <input type="radio" class="btn-check" name="rating" id="r5-@product.ProductId" value="5" required>
+                                                    <label class="btn btn-outline-warning btn-sm" for="r5-@product.ProductId">5</label>
+                                                    <input type="radio" class="btn-check" name="rating" id="r4-@product.ProductId" value="4">
+                                                    <label class="btn btn-outline-warning btn-sm" for="r4-@product.ProductId">4</label>
+                                                    <input type="radio" class="btn-check" name="rating" id="r3-@product.ProductId" value="3">
+                                                    <label class="btn btn-outline-warning btn-sm" for="r3-@product.ProductId">3</label>
+                                                    <input type="radio" class="btn-check" name="rating" id="r2-@product.ProductId" value="2">
+                                                    <label class="btn btn-outline-warning btn-sm" for="r2-@product.ProductId">2</label>
+                                                    <input type="radio" class="btn-check" name="rating" id="r1-@product.ProductId" value="1">
+                                                    <label class="btn btn-outline-warning btn-sm" for="r1-@product.ProductId">1</label>
+                                                </div>
+                                            </div>
+                                            <div class="mb-2">
+                                                <textarea name="reviewText" class="form-control form-control-sm" rows="3" placeholder="Текст отзыва (минимум 10 символов)..." required minlength="10" maxlength="2000"></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary btn-sm">Отправить</button>
+                                        </form>
+                                    </div>
+                                    @if (product.Reviews?.Any() == true)
+                                    {
+                                        <div class="list-group">
+                                            @foreach (var review in product.Reviews.OrderByDescending(r => r.CreatedAt).Take(5))
+                                            {
+                                                <div class="list-group-item list-group-item-action">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h6 class="mb-1 text-warning">@review.Rating ★</h6>
+                                                        <div class="text-end">
+                                                            <small class="text-muted d-block">@review.CreatedAt?.ToString("dd.MM.yyyy")</small>
+                                                            @if (Model.IsAdmin)
+                                                            {
+                                                                <button class="btn btn-danger btn-sm p-0 px-2 mt-1" style="font-size: 0.7rem;" onclick="deleteReview(@review.NumberOfReview)">
+                                                                    Удалить
+                                                                </button>
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                    <p class="mb-1 small">@review.Review1</p>
+                                                </div>
+                                            }
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <p class="text-muted small fst-italic">Отзывов пока нет. Будьте первым!</p>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- Модальные окна (статистика, история) -->
+<div class="modal fade" id="statsModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Статистика продаж</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-2 mb-3">
+                    <div class="col">
+                        <label>С:</label>
+                        <input type="date" id="statsStart" class="form-control" value="@DateTime.Now.AddMonths(-1).ToString("yyyy-MM-dd")" />
+                    </div>
+                    <div class="col">
+                        <label>По:</label>
+                        <input type="date" id="statsEnd" class="form-control" value="@DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")" />
+                    </div>
+                </div>
+                <button onclick="loadStats()" class="btn btn-primary w-100 mb-3">Загрузить</button>
+                <div id="statsResult" class="d-none">
+                    <ul class="list-group">
+                        <li class="list-group-item">Заказов: <strong id="stOrders"></strong></li>
+                        <li class="list-group-item">Выручка: <strong id="stRevenue"></strong></li>
+                        <li class="list-group-item">Средний чек: <strong id="stAvg"></strong></li>
+                        <li class="list-group-item">Продано товаров: <strong id="stSold"></strong></li>
+                        <li class="list-group-item">Популярный товар: <strong id="stPopProd"></strong></li>
+                        <li class="list-group-item">Популярная категория: <strong id="stPopCat"></strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="historyModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">История клиента</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <input type="text" id="historyEmail" class="form-control" placeholder="Email клиента..." />
+                    <button onclick="loadHistory()" class="btn btn-primary">Найти</button>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-sm table-bordered d-none" id="historyTable">
+                        <thead>
+                            <tr>
+                                <th>Дата</th>
+                                <th>Заказ №</th>
+                                <th>Товар</th>
+                                <th>Тип</th>
+                                <th>Кол-во</th>
+                                <th>Сумма</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        async function loadStats() {
+            const start = document.getElementById('statsStart').value;
+            const end = document.getElementById('statsEnd').value;
+            const resDiv = document.getElementById('statsResult');
+            try {
+                const response = await fetch(`/Catalog?handler=SalesStats&start=${start}&end=${end}`);
+                const json = await response.json();
+                if(json.success && json.data) {
+                    const d = json.data;
+                    document.getElementById('stOrders').textContent = d.total_orders;
+                    document.getElementById('stRevenue').textContent = d.total_revenue + ' ₽';
+                    document.getElementById('stAvg').textContent = d.average_order_value + ' ₽';
+                    document.getElementById('stSold').textContent = d.total_products_sold;
+                    document.getElementById('stPopProd').textContent = d.most_popular_product || '-';
+                    document.getElementById('stPopCat').textContent = d.most_popular_category || '-';
+                    resDiv.classList.remove('d-none');
+                } else { alert('Данных не найдено или ошибка'); }
+            } catch(e) { console.error(e); alert('Ошибка загрузки'); }
+        }
+
+        async function loadHistory() {
+            const email = document.getElementById('historyEmail').value;
+            const table = document.getElementById('historyTable');
+            const tbody = document.getElementById('historyBody');
+            tbody.innerHTML = '';
+            try {
+                const response = await fetch(`/Catalog?handler=CustomerHistory&email=${email}`);
+                const json = await response.json();
+                if(json.success && json.data && json.data.length > 0) {
+                    json.data.forEach(item => {
+                        const row = `<tr><td>${new Date(item.order_date).toLocaleDateString()}</td><td>${item.order_number}</td><td>${item.product_name}</td><td>${item.product_type}</td><td>${item.quantity}</td><td>${item.total_price} ₽</td></tr>`;
+                        tbody.innerHTML += row;
+                    });
+                    table.classList.remove('d-none');
+                } else { table.classList.add('d-none'); alert('Покупки не найдены'); }
+            } catch(e) { console.error(e); alert('Ошибка загрузки'); }
+        }
+
+            async function addToCart(event, productId) {
+            event.preventDefault();
+            // Находим кнопку внутри формы, которая была отправлена
+            const btn = event.target.querySelector('button');
+
+            // Если кнопка уже заблокирована, ничего не делаем
+            if (btn.disabled && btn.classList.contains('btn-secondary')) return;
+
+            const originalHtml = btn.innerHTML;
+
+            // Временная блокировка пока идет запрос
+            btn.disabled = true;
+            btn.innerHTML = '<span class="spinner-border spinner-border-sm"></span>';
+
+            try {
+                const formData = new FormData();
+                formData.append('productId', productId);
+                const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+                const response = await fetch('/Catalog?handler=AddToCart', {
+                    method: 'POST',
+                    headers: { 'RequestVerificationToken': token },
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    // 1. Обновляем счетчик в шапке
+                    const badge = document.getElementById('globalCartCount');
+                    if (badge) badge.textContent = result.cartCount;
+
+                    showToast('Товар добавлен в корзину!', 'success');
+
+                    // 2. ПРОВЕРКА ЛИМИТА
+                    // Если количество в корзине достигло или превысило складской запас
+                    if (result.quantityInCart >= result.maxStock) {
+                        btn.disabled = true; 
+                        btn.classList.remove('btn-primary');
+                        btn.classList.add('btn-secondary'); 
+                        btn.innerHTML = 'Максимум в корзине'; 
+                    } else {
+                        // Если лимит не достигнут, возвращаем кнопку в исходное состояние
+                        btn.disabled = false;
+                        btn.innerHTML = originalHtml;
+                    }
+
+                } else {
+                    // Обработка ошибок
+                    btn.disabled = false;
+                    btn.innerHTML = originalHtml;
+
+                    if (result.message.includes("войти")) {
+                        if (confirm("Необходимо войти. Перейти на страницу входа?")) location.href = "/Authoriz";
+                    }
+                    else if (result.message.includes("лимит") || result.message.includes("Недостаточно")) {
+                        // Если сервер вернул ошибку лимита 
+                        // Тоже блокируем кнопку
+                        showToast(result.message, 'warning');
+                        btn.disabled = true;
+                        btn.classList.remove('btn-primary');
+                        btn.classList.add('btn-secondary');
+                        btn.innerHTML = 'Максимум в корзине';
+                    }
+                    else {
+                        showToast(result.message, 'danger');
+                    }
+                }
+            } catch (e) {
+                console.error(e);
+                showToast('Ошибка сети', 'danger');
+                btn.disabled = false;
+                btn.innerHTML = originalHtml;
+            }
+        }
+
+        async function submitReview(event, productId) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            formData.append('productId', productId);
+            const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+            try {
+                const res = await fetch('/Catalog?handler=AddReview', { method: 'POST', headers: { 'RequestVerificationToken': token }, body: formData });
+                const result = await res.json();
+                if (result.success) { showToast(result.message, 'success'); setTimeout(() => location.reload(), 1000); } else { showToast(result.message, 'danger'); }
+            } catch (e) { showToast('Ошибка отправки отзыва', 'danger'); }
+        }
+
+        async function deleteReview(reviewId) {
+            if(!confirm("Вы уверены?")) return;
+            const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+            const formData = new FormData();
+            formData.append('reviewId', reviewId);
+            try {
+                 const res = await fetch('/Catalog?handler=DeleteReview', { method: 'POST', headers: { 'RequestVerificationToken': token }, body: formData });
+                const result = await res.json();
+                if (result.success) { showToast(result.message, 'success'); setTimeout(() => location.reload(), 500); } else { showToast(result.message, 'danger'); }
+            } catch(e) { showToast('Ошибка удаления', 'danger'); }
+        }
+
+        function updateUI(productId, stock) {
+            const card = document.querySelector(`.product-card[data-product-id="${productId}"]`);
+            if (card) {
+                const stockEl = card.querySelector('.stock-quantity');
+                if (stockEl) stockEl.textContent = stock;
+                const btn = card.querySelector('.add-to-cart-btn');
+                if (stock <= 0 && btn) { btn.disabled = true; btn.textContent = 'Нет в наличии'; btn.classList.replace('btn-primary', 'btn-secondary'); }
+            }
+        }
+
+        function showToast(msg, type) {
+            const div = document.createElement('div');
+            div.className = `alert alert-${type} position-fixed top-0 end-0 m-3 shadow`;
+            div.style.zIndex = 9999;
+            div.innerHTML = msg;
+            document.body.appendChild(div);
+            setTimeout(() => div.remove(), 3000);
+        }
+    </script>
+    <style>
+        .hover-bg-light:hover {
+            background-color: #f8f9fa;
+        }
+
+        .product-card {
+            transition: transform 0.2s;
+        }
+
+            .product-card:hover {
+                transform: translateY(-2px);
+            }
+    </style>
+}

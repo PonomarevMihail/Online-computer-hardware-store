@@ -1,0 +1,60 @@
+﻿@page
+@model KursachBD.Pages.Product_price_history.EditModel
+
+@{
+    ViewData["Title"] = "Изменить";
+}
+
+<h1>Изменить</h1>
+
+<h4>История изменения цен</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ProductPriceHistory.HistoryId" />
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="ProductPriceHistory.ProductId" class="control-label">Номер продукта</label>
+                <input asp-for="ProductPriceHistory.ProductId" class="form-control" readonly />
+                <span asp-validation-for="ProductPriceHistory.ProductId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="ProductPriceHistory.OldPrice" class="control-label">Старая цена</label>
+                <input asp-for="ProductPriceHistory.OldPrice" class="form-control" />
+                <span asp-validation-for="ProductPriceHistory.OldPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="ProductPriceHistory.NewPrice" class="control-label">Новая цена</label>
+                <input asp-for="ProductPriceHistory.NewPrice" class="form-control" />
+                <span asp-validation-for="ProductPriceHistory.NewPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="ProductPriceHistory.ChangedAt" class="control-label">Дата изменения</label>
+                <input asp-for="ProductPriceHistory.ChangedAt" class="form-control" />
+                <span asp-validation-for="ProductPriceHistory.ChangedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="ProductPriceHistory.ChangedBy" class="control-label">Изменил</label>
+                <input asp-for="ProductPriceHistory.ChangedBy" class="form-control" />
+                <span asp-validation-for="ProductPriceHistory.ChangedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Сохранить" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Вернуться к списку</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,255 @@
+﻿@page
+@model KursachBD.Pages.IndexModel
+@{
+    ViewData["Title"] = "Kirov Tech - Магазин компьютерной техники";
+}
+
+@section Styles {
+    <style>
+        .product-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+            .product-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+            }
+
+        .hero-banner {
+            background: linear-gradient(85deg, #995d2e 50%, #266da2 100%);
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .stock-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+        }
+    </style>
+}
+
+@Html.AntiForgeryToken()
+
+<!-- Hero Section -->
+<section class="hero-banner text-white py-5 mb-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-3">Kirov Tech</h1>
+                <p class="lead mb-4">Магазин компьютерной техники с гарантией качества и лучшими ценами</p>
+
+                <div class="d-flex flex-wrap gap-3 mb-3">
+                    <a href="/catalog" class="btn btn-light btn-lg px-4">
+                        <i class="bi bi-cart2 me-2"></i>В каталог
+                    </a>
+                    <a href="#best-sellers" class="btn btn-outline-light btn-lg px-4">
+                        <i class="bi bi-fire me-2"></i>Хиты продаж
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                <img src="~/images/head.png" alt="Техника Kirov Tech" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Хиты продаж -->
+<section id="best-sellers" class="mb-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>🔥 Хиты продаж</h2>
+        <a href="/catalog?sort=bestseller" class="btn btn-link text-decoration-none">
+            Все хиты <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+    </div>
+
+    <div class="row g-4">
+        @foreach (var product in Model.BestSellers)
+        {
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card product-card h-100 border-0 shadow-sm position-relative">
+                    @if (product.Stock > 0)
+                    {
+                        <span class="badge bg-success stock-badge">В наличии (@product.Stock шт.)</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary stock-badge">Нет в наличии</span>
+                    }
+
+                    <div class="position-relative overflow-hidden" style="height: 200px;">
+                        <img src="~/images/icon.png"
+                             class="card-img-top p-3" alt="@product.Name"
+                             style="height: 100%; object-fit: contain;">
+                    </div>
+
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title mb-1" title="@product.Name">
+                            @(product.Name.Length > 50 ? product.Name.Substring(0, 50) + "..." : product.Name)
+                        </h6>
+                        <p class="text-muted small mb-2">
+                            @product.Manufacturer
+                        </p>
+
+                        <div class="mt-auto">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="h5 text-primary mb-0">@product.Price.ToString("N0") ₽</span>
+                                </div>
+                                <div>
+                                    <span class="badge bg-light text-dark border">
+                                        @product.Weight кг
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="d-grid gap-2 mt-3">
+                                @if (product.Stock > 0)
+                                {
+                                    <button class="btn btn-primary add-to-cart"
+                                            data-product-id="@product.ProductId"
+                                            data-product-name="@product.Name">
+                                        <i class="bi bi-cart-plus me-2"></i>В корзину
+                                    </button>
+                                }
+                                else
+                                {
+                                    <button class="btn btn-outline-secondary" disabled>
+                                        Нет в наличии
+                                    </button>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+<!-- Преимущества -->
+<section class="bg-light py-5 rounded mb-5">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-bold">Почему выбирают Kirov Tech?</h2>
+        <div class="row g-4 text-center">
+            <div class="col-md-3 col-6">
+                <div class="p-3">
+                    <i class="bi bi-shield-check display-4 text-primary mb-3"></i>
+                    <h5 class="fw-bold">Гарантия</h5>
+                    <p class="text-muted fs-6">Официальная гарантия</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="p-3">
+                    <i class="bi bi-truck display-4 text-primary mb-3"></i>
+                    <h5 class="fw-bold">Быстрая доставка</h5>
+                    <p class="text-muted fs-6">В ближайшие города за 2 дня</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="p-3">
+                    <i class="bi bi-credit-card display-4 text-primary mb-3"></i>
+                    <h5 class="fw-bold">Рассрочка 0%</h5>
+                    <p class="text-muted fs-6">Без переплат</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="p-3">
+                    <i class="bi bi-headset display-4 text-primary mb-3"></i>
+                    <h5 class="fw-bold">Поддержка 24/7</h5>
+                    <p class="text-muted fs-6">Помощь в выборе</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', async function() {
+                const btn = this; // Сохраняем ссылку на текущую кнопку
+                const productId = btn.dataset.productId;
+                const productName = btn.dataset.productName || 'Товар';
+                const originalText = btn.innerHTML;
+
+                // Блокируем кнопку на время запроса
+                btn.disabled = true;
+                btn.innerHTML = '<span class="spinner-border spinner-border-sm"></span>';
+
+                try {
+                    const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+                    const formData = new FormData();
+                    formData.append('productId', productId);
+
+                    const response = await fetch('?handler=AddToCart', {
+                        method: 'POST',
+                        headers: {
+                            'RequestVerificationToken': token
+                        },
+                        body: formData
+                    });
+
+                    const result = await response.json();
+
+                    if (result.success) {
+                        // Успех
+                        const badge = document.getElementById('globalCartCount');
+                        if (badge) {
+                            badge.textContent = result.cartCount;
+                            badge.classList.remove('bg-danger');
+                            badge.classList.add('bg-success');
+                            setTimeout(() => {
+                                badge.classList.remove('bg-success');
+                                badge.classList.add('bg-danger');
+                            }, 500);
+                        }
+
+                        // Возвращаем кнопку в активное состояние, чтобы можно было добавить ещё (если позволяет склад)
+                        btn.disabled = false;
+                        btn.innerHTML = originalText;
+                        alert(`${productName} добавлен в корзину!`);
+                    } else {
+                        // ОБРАБОТКА ОШИБОК
+
+                        if (result.message === "Необходимо войти в систему") {
+                             if(confirm("Для покупок необходимо войти. Перейти на страницу входа?")) {
+                                 window.location.href = "/Authoriz";
+                             }
+                             btn.disabled = false;
+                             btn.innerHTML = originalText;
+                        }
+                        // ПРОВЕРКА ЛИМИТА: если сервер сообщил, что достигнут лимит
+                        else if (result.message && (result.message.includes("лимит") || result.message.includes("недостаточно"))) {
+                            alert(result.message);
+
+                            // БЛОКИРУЕМ КНОПКУ НАВСЕГДА ДЛЯ ЭТОГО ТОВАРА
+                            btn.disabled = true;
+                            btn.classList.remove('btn-primary');
+                            btn.classList.add('btn-secondary');
+                            btn.innerHTML = 'Максимум в корзине';
+                        }
+                        else if (result.message && result.message.toLowerCase().includes("нет в наличии")) {
+                            alert(result.message);
+                            location.reload(); // Перезагружаем, если товар вообще кончился
+                        } else {
+                            alert(result.message);
+                            btn.disabled = false;
+                            btn.innerHTML = originalText;
+                        }
+                    }
+                } catch (error) {
+                    console.error(error);
+                    alert('Ошибка при добавлении в корзину');
+                    btn.disabled = false;
+                    btn.innerHTML = originalText;
+                }
+            });
+        });
+    </script>
+}

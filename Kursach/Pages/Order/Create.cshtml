@@ -1,0 +1,64 @@
+﻿@page
+@model KursachBD.Pages.Order.CreateModel
+
+        @{
+        ViewData["Title"] = "Создать заказ";
+        }
+        
+        <h1>Создать</h1>
+        
+    <h4>Заказ</h4>
+    <hr />
+    <div class="row">
+    <div class="col-md-4">
+    <form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Order.Price" class="control-label">Цена</label>
+                <input asp-for="Order.Price" class="form-control" />
+                <span asp-validation-for="Order.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Order.DeliveryAddress" class="control-label">Адрес доставки</label>
+                <input asp-for="Order.DeliveryAddress" class="form-control" />
+                <span asp-validation-for="Order.DeliveryAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Order.Comment" class="control-label">Комментарий</label>
+                <input asp-for="Order.Comment" class="form-control" />
+                <span asp-validation-for="Order.Comment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Order.CustomerId" class="control-label">Номер пользователя</label>
+                <input asp-for="Order.CustomerId" class="form-control" />
+                <span asp-validation-for="Order.CustomerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Order.DeliveryDate" class="control-label">Дата доставки</label>
+                <input asp-for="Order.DeliveryDate" class="form-control" />
+                <span asp-validation-for="Order.DeliveryDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Order.PaymentDate">Дата оплаты</label>
+                <input asp-for="Order.PaymentDate" class="form-control" type="date" />
+                <span asp-validation-for="Order.PaymentDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Вернуться к списку</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

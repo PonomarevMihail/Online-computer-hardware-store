@@ -1,0 +1,66 @@
+﻿@page
+@model KursachBD.Pages.Order.IndexModel
+
+@{
+    ViewData["Title"] = "Заказы";
+}
+
+<h1>Заказы</h1>
+
+<p>
+    <a asp-page="Create">Создать новый заказ</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Цена
+            </th>
+            <th>
+                Адрес доставки
+            </th>
+            <th>
+                Комментарий
+            </th>
+            <th>
+                Номер пользователя
+            </th>
+            <th>
+                Дата доставки
+            </th>
+            <th>
+                Дата покупки
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Order) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeliveryAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeliveryDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PaymentDate)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.NumberOfOrder">Изменить</a> |
+                <a asp-page="./Details" asp-route-id="@item.NumberOfOrder">Сведения</a> |
+                <a asp-page="./Delete" asp-route-id="@item.NumberOfOrder">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

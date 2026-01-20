@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="KursachBD.Models.ContentOfOrder">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAQAAAAAAAAAAAAAAAQAAAAACAAAAgAAAAAA=</HashCode>
+      <FileName>Models\ContentOfOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Pages.CartService">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAEAAAAAATAAAAACCAEAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\CartService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Pages.CatalogModel">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="KursachBD.Pages.CatalogModel.CategoryItem" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Pages\Catalog.cshtml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="KursachBD.Pages.CatalogModel.SalesStatDto" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Pages\Catalog.cshtml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="KursachBD.Pages.CatalogModel.CustomerPurchaseDto" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Pages\Catalog.cshtml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AGAAAIAECACAXAAwgCCQAAhgCAAAFACAAAIAAAAAAAw=</HashCode>
+      <FileName>Pages\Catalog.cshtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Pages.ErrorModel">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAQAAAAAAAAAIAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Pages\Error.cshtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Pages.IndexModel">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAADAAgAIAAAAAgAAAABAAAAAAAAAACAAA=</HashCode>
+      <FileName>Pages\Index.cshtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.Product">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAgAAEAAAQAAAAAACAAAAAQAgCAAEQAAAQAIAAAAAAA=</HashCode>
+      <FileName>Models\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.ProductPriceHistory">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAGAAAAAAAAAAAAAAAAAAAAAAAACAAAAAASAAAAACA=</HashCode>
+      <FileName>Models\ProductPriceHistory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.PaymentDateNotFutureAttribute">
+    <Position X="9.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.DeliveryDateRangeAttribute">
+    <Position X="7.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.Order">
+    <Position X="7.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAQEAAAAABCAAAAAAAAAAEBACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.OnlineStoreSellingComputerEquipmentContext">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEAAAQAQAAAAAAAAAAAAEgAAEAAAAQBIAEAAAAQ=</HashCode>
+      <FileName>Models\OnlineStoreSellingComputerEquipmentContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KursachBD.Models.Customer">
+    <Position X="3.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACIAACAAAAAAEAAAAAQABAAAABACAAAQIAAAAAA=</HashCode>
+      <FileName>Models\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

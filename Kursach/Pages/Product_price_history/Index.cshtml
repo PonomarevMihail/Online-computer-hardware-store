@@ -1,0 +1,60 @@
+﻿@page
+@model KursachBD.Pages.Product_price_history.IndexModel
+
+@{
+    ViewData["Title"] = "История изменения цен";
+}
+
+<h1>История изменения цен</h1>
+
+<p>
+    <a asp-page="Create">Создать новую историю</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Прошлая цена
+            </th>
+            <th>
+                Новая цена
+            </th>
+            <th>
+                Дата изменения
+            </th>
+            <th>
+                Изменил
+            </th>
+            <th>
+                Номер товара
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.ProductPriceHistory) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OldPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NewPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChangedAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChangedBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Product.ProductId)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.HistoryId">Изменить</a> |
+                <a asp-page="./Details" asp-route-id="@item.HistoryId">Сведения</a> |
+                <a asp-page="./Delete" asp-route-id="@item.HistoryId">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

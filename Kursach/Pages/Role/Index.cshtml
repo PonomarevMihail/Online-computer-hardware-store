@@ -1,0 +1,37 @@
+﻿@page
+@model KursachBD.Pages.Role.IndexModel
+
+@{
+    ViewData["Title"] = "Роли";
+}
+
+<h1>Роли</h1>
+
+<p>
+    <a asp-page="Create">Создать новую роль</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Название
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Role)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.JobTitle)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.RoleId">Изменить</a> |
+                    <a asp-page="./Details" asp-route-id="@item.RoleId">Сведения</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.RoleId">Удалить</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

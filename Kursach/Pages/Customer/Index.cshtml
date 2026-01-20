@@ -1,0 +1,78 @@
+﻿@page
+@model KursachBD.Pages.Customer.IndexModel
+
+@{
+    ViewData["Title"] = "Пользователи";
+}
+
+<h1>Пользователи</h1>
+
+<p>
+    <a asp-page="Create">Создать нового пользователя</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Пароль
+            </th>
+            <th>
+                Имя
+            </th>
+            <th>
+                Фамилия
+            </th>
+            <th>
+                Отчество
+            </th>
+            <th>
+                Логин
+            </th>
+            <th>
+                Почта
+            </th>
+            <th>
+                Телефон
+            </th>
+            <th>
+                Роль
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Customer) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Surname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Patronymic)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Login)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Role.RoleId)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.CustomerId">Изменить</a> |
+                    <a asp-page="./Details" asp-route-id="@item.CustomerId">Сведения</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.CustomerId">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,110 @@
+﻿@page
+@model KursachBD.Pages.Product.CreateModel
+
+        @{
+        ViewData["Title"] = "Создать товар";
+        }
+
+<h1>Создать товар</h1>
+        
+    <h4>Товар</h4>
+    <hr />
+    <div class="row">
+    <div class="col-md-4">
+    <form method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Product.Name" class="control-label">Имя</label>
+                <input asp-for="Product.Name" class="form-control" />
+                <span asp-validation-for="Product.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Characteristics" class="control-label">Характеристики</label>
+                <input asp-for="Product.Characteristics" class="form-control" />
+                <span asp-validation-for="Product.Characteristics" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Price" class="control-label">Цена</label>
+                <input asp-for="Product.Price" class="form-control" />
+                <span asp-validation-for="Product.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Manufacturer" class="control-label">Производитель</label>
+                <input asp-for="Product.Manufacturer" class="form-control" />
+                <span asp-validation-for="Product.Manufacturer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Weight" class="control-label">Вес</label>
+                <input asp-for="Product.Weight" class="form-control" />
+                <span asp-validation-for="Product.Weight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Stock" class="control-label">Остаток на складе</label>
+                <input asp-for="Product.Stock" class="form-control" />
+                <span asp-validation-for="Product.Stock" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.TypeOfProduct" class="control-label">Тип продукта</label>
+                <select asp-for="Product.TypeOfProduct" class="form-control">
+                    <option value="">-- Выберите тип --</option>
+                    <option value="laptop">Ноутбук</option>
+                    <option value="desktop">Стационарный ПК</option>
+                    <option value="all_in_one">All-in-One</option>
+                    <option value="workstation">Рабочая станция</option>
+                    <option value="server">Сервер</option>
+                    <option value="processor">Процессор</option>
+                    <option value="motherboard">Материнская плата</option>
+                    <option value="ram">Оперативная память</option>
+                    <option value="video_card">Видеокарта</option>
+                    <option value="power_supply">Блок питания</option>
+                    <option value="computer_case">Корпус ПК</option>
+                    <option value="cooling_system">Система охлаждения</option>
+                    <option value="ssd">SSD</option>
+                    <option value="hdd">HDD</option>
+                    <option value="external_drive">Внешний диск</option>
+                    <option value="flash_drive">Флешка</option>
+                    <option value="memory_card">Карта памяти</option>
+                    <option value="monitor">Монитор</option>
+                    <option value="keyboard">Клавиатура</option>
+                    <option value="mouse">Мышь</option>
+                    <option value="headphones">Наушники</option>
+                    <option value="webcam">Вебкамера</option>
+                    <option value="microphone">Микрофон</option>
+                    <option value="speakers">Колонки</option>
+                    <option value="router">Маршрутизатор</option>
+                    <option value="network_adapter">Сетевой адаптер</option>
+                    <option value="wifi_extender">Wi-Fi повторитель</option>
+                    <option value="printer">Принтер</option>
+                    <option value="scanner">Сканер</option>
+                    <option value="multifunction_device">МФУ</option>
+                    <option value="mouse_pad">Коврик для мыши</option>
+                    <option value="usb_hub">USB-хаб</option>
+                    <option value="cable">Кабель</option>
+                    <option value="adapter">Адаптер</option>
+                    <option value="laptop_bag">Сумка для ноутбука</option>
+                    <option value="gaming_mouse">Игровая мышь</option>
+                    <option value="gaming_keyboard">Игровая клавиатура</option>
+                    <option value="gamepad">Геймпад</option>
+                    <option value="joystick">Джойстик</option>
+                    <option value="vr_headset">VR-шлем</option>
+                    <option value="software">Программное обеспечение</option>
+                    <option value="component">Компонент</option>
+                    <option value="accessory">Аксессуар</option>
+                    
+                </select>
+                <span asp-validation-for="Product.TypeOfProduct" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Создать новый" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Вернуться к списку продуктов</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

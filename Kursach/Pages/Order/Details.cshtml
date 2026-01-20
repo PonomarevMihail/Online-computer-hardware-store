@@ -1,0 +1,55 @@
+﻿@page
+@model KursachBD.Pages.Order.DetailsModel
+
+@{
+    ViewData["Title"] = "Информация о заказе";
+}
+
+<h1>Информация</h1>
+
+<div>
+    <h4>Заказ</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Цена
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Order.Price)
+        </dd>
+        <dt class="col-sm-2">
+            Адрес доставки
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Order.DeliveryAddress)
+        </dd>
+        <dt class="col-sm-2">
+            Комментарий
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Order.Comment)
+        </dd>
+        <dt class="col-sm-2">
+            Номер клиента
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Order.CustomerId)
+        </dd>
+        <dt class="col-sm-2">
+            Дата доставки
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Order.DeliveryDate)
+        </dd>
+        <dt class="col-sm-2">
+            Дата оплаты
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Order.PaymentDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Order.NumberOfOrder">Изменить</a> 
+    <a asp-page="./Index">Вернуться к списку</a>
+</div>
